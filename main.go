@@ -5,20 +5,24 @@ import (
 	"log"
 	"sync"
 	"time"
-	//"github.com/scylladb/gocqlx"
+	//go mod vendor"github.com/jmoiron/sqlx"
 )
 
 func main() {
-	cluster := gocql.NewCluster("172.17.0.2", "172.17.0.3", "172.17.0.4")
-	cluster.Keyspace = "dmp_db"
-	//cluster.Timeout = 6600 * time.Millisecond
-	cluster.NumConns = 3
-	cluster.Consistency = gocql.Quorum
-	session, _ := cluster.CreateSession()
-	defer session.Close()
+	/*
+		cluster := gocql.NewCluster("172.17.0.2", "172.17.0.3", "172.17.0.4")
+		cluster.Keyspace = "dmp_db"
+		//cluster.Timeout = 6600 * time.Millisecond
+		cluster.NumConns = 3
+		cluster.Consistency = gocql.Quorum
+		session, _ := cluster.CreateSession()
+		defer session.Close()
 
-	testInserts(session, 10000, 40)
+		testInserts(session, 10000, 40)
+	*/
+
 	//testBatchInserts(session, 2000, 50, 10)
+	testClickHouseBatch()
 }
 
 func testBatchInserts(session *gocql.Session, quantityBatches, poolSize, batchSize int) {
