@@ -1,0 +1,15 @@
+# github.com/gocql/gocql v0.0.0-20190423091413-b99afaf3b163
+github.com/gocql/gocql
+github.com/gocql/gocql/internal/lru
+github.com/gocql/gocql/internal/murmur
+github.com/gocql/gocql/internal/streams
+# github.com/golang/snappy v0.0.1
+github.com/golang/snappy
+# github.com/hailocab/go-hostpool v0.0.0-20160125115350-e80d13ce29ed
+github.com/hailocab/go-hostpool
+# github.com/scylladb/go-reflectx v1.0.1
+github.com/scylladb/go-reflectx
+# github.com/scylladb/gocqlx v1.3.1
+github.com/scylladb/gocqlx
+# gopkg.in/inf.v0 v0.9.1
+gopkg.in/inf.v0
